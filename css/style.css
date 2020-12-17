@@ -593,6 +593,7 @@ body {
     top: 25px;
     width: 100%;
     max-width: 250px;
+    background-color: #f1f1f1;
     padding-top: 12px;
     height: 100%;
     padding-left: 2%;
@@ -601,11 +602,17 @@ body {
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s; } }
-
+    transition: transform 0.2s, -webkit-transform 0.2s; }
+  .menu-sidebar.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%); } }
 
 .m-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+@media (max-width: 760px) {
+  .search {
+    display: none; } }
 /*# sourceMappingURL=style.css.map */
